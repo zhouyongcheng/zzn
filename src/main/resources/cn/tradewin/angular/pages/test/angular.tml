@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter">
+    
+  <body ng-app="aotApp">
+    <div ng-controller="myctrl as ctrl">
+       <div ng-repeat="note in ctrl.notes">
+       	<span>{{note.label}}</span>
+       	<span>{{note.status}}</span>
+       </div>
+    </div>
+    
+    <script type="text/javascript" src="${context:js/lib/angular.js}"></script>
+    <script type="text/javascript">
+    	angular.module('aotApp',[]).controller('myctrl',[function() {
+			var self = this;
+			self.notes = [
+			  {label:'java', status :'learning'},
+			  {label:'java', status :'learning'},
+			  {label:'java', status :'learning'}
+			];
+		}]);
+    </script>
+    
+  </body>
+  
+</html>

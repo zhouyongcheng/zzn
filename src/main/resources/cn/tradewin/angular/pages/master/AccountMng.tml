@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html t:type="Layout" title="${message:account_mng}" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+
+  <div class="well">
+    <ul>
+      <li><a href="#/list">List</a></li>
+      <li><a href="#/create">create</a></li>
+    </ul>
+    <div ui-view=""></div>
+  </div>
+</html>

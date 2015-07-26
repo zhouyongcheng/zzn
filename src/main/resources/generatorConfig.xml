@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <context id="context1" targetRuntime="MyBatis3" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+                    connectionURL="jdbc:mysql://192.168.0.173:3306/twdpm"
+                    userId="twdpm" 
+                    password="twdpm" />
+    <javaModelGenerator targetPackage="cn.tradewin.angular.persist.model" targetProject="/home/cmwin/workspace/Angular/src/main/java" />
+    <sqlMapGenerator targetPackage="cn.tradewin.angular.persist.config" targetProject="/home/cmwin/workspace/Angular/src/main/java" />
+    <javaClientGenerator targetPackage="cn.tradewin.angular.persist.mapper" targetProject="/home/cmwin/workspace/Angular/src/main/java" type="XMLMAPPER" />
+    
+    <table schema="twdpm" tableName="department" />
+<!--     <table schema="twdpm" tableName="account" /> -->
+<!--     <table schema="twdpm" tableName="users" /> -->
+<!--     <table schema="twdpm" tableName="roles" />  -->
+<!--     <table schema="twdpm" tableName="permissions" /> -->
+<!--     <table schema="twdpm" tableName="role_perms" /> -->
+<!--     <table schema="twdpm" tableName="user_roles" /> -->
+<!--     <table schema="twdpm" tableName="user_perms" /> -->
+<!--     <table schema="twdpm" tableName="vacation" /> -->
+<!--     <table schema="twdpm" tableName="codetable" /> -->
+<!--     <table schema="twdpm" tableName="project" /> -->
+<!--     <table schema="twdpm" tableName="customer" /> -->
+<!--     <table schema="twdpm" tableName="wbs" /> -->
+<!--      <table schema="twdpm" tableName="project_resource" />  -->
+<!--      <table schema="twdpm" tableName="task" /> -->
+<!--      <table schema="twdpm" tableName="project_task" /> -->
+<!--      <table schema="twdpm" tableName="advcalendar" /> -->
+<!--      <table schema="twdpm" tableName="calendar_category" /> -->
+<!--      <table schema="twdpm" tableName="calendar_dates" /> -->
+    
+  </context>
+</generatorConfiguration>
